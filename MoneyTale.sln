@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{C2FD1F1D-7D48-4463-B576-6853997FD411}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{5B0EC61B-6EC0-4F30-B6BB-4B37DFFF7D53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{4F0B37EB-C808-4FE1-A333-877581A59C90}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet-ci.yml = .github\workflows\dotnet-ci.yml
+		.github\workflows\ef-migrations.yml = .github\workflows\ef-migrations.yml
+		.github\workflows\node.js.yml = .github\workflows\node.js.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4F20C5C5-A6A5-4164-9567-78F79FA0CBE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyTale.Server.Tests", "tests\Server\MoneyTale.Server.Tests\MoneyTale.Server.Tests.csproj", "{CF271336-4529-4E96-A2C4-05E186735092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26D96A1F-E692-42B1-A4BA-0AF356A32D13}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		src\_shared.ruleset = src\_shared.ruleset
+		src\_shared.targets = src\_shared.targets
+		tests\_tests.targets = tests\_tests.targets
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{212CF9B2-84C3-4B43-AB32-59374B059E66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyTale.Server.Identity", "src\Server\MoneyTale.Server.Identity\MoneyTale.Server.Identity.csproj", "{449827E2-1574-466C-8950-881FE7C9CA46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyTale.Server", "src\Server\MoneyTale.Server\MoneyTale.Server.csproj", "{29E6A49A-8A56-454B-8B86-889652443331}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyTale.Client", "src\Client\MoneyTale.Client\MoneyTale.Client.csproj", "{85F318F2-B191-4343-B26A-76F8D269294F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyTale.Shared", "src\Shared\MoneyTale.Shared\MoneyTale.Shared.csproj", "{84C84336-18C2-490D-8BD2-6B3D4CCF78E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{74296895-0F1C-4190-8075-F4140B3B461F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{A892DD2A-D302-4EF8-98DB-D767F22EAF51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B1A764F4-D7FF-4A2C-93EC-6F2BE0C544AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{FD51508D-070B-4AE1-923B-0E85437EEB64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF271336-4529-4E96-A2C4-05E186735092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF271336-4529-4E96-A2C4-05E186735092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF271336-4529-4E96-A2C4-05E186735092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF271336-4529-4E96-A2C4-05E186735092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449827E2-1574-466C-8950-881FE7C9CA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449827E2-1574-466C-8950-881FE7C9CA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449827E2-1574-466C-8950-881FE7C9CA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449827E2-1574-466C-8950-881FE7C9CA46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E6A49A-8A56-454B-8B86-889652443331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E6A49A-8A56-454B-8B86-889652443331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E6A49A-8A56-454B-8B86-889652443331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E6A49A-8A56-454B-8B86-889652443331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F318F2-B191-4343-B26A-76F8D269294F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F318F2-B191-4343-B26A-76F8D269294F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F318F2-B191-4343-B26A-76F8D269294F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F318F2-B191-4343-B26A-76F8D269294F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C84336-18C2-490D-8BD2-6B3D4CCF78E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C84336-18C2-490D-8BD2-6B3D4CCF78E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C84336-18C2-490D-8BD2-6B3D4CCF78E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C84336-18C2-490D-8BD2-6B3D4CCF78E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2FD1F1D-7D48-4463-B576-6853997FD411} = {26D96A1F-E692-42B1-A4BA-0AF356A32D13}
+		{5B0EC61B-6EC0-4F30-B6BB-4B37DFFF7D53} = {C2FD1F1D-7D48-4463-B576-6853997FD411}
+		{4F0B37EB-C808-4FE1-A333-877581A59C90} = {5B0EC61B-6EC0-4F30-B6BB-4B37DFFF7D53}
+		{CF271336-4529-4E96-A2C4-05E186735092} = {FD51508D-070B-4AE1-923B-0E85437EEB64}
+		{449827E2-1574-466C-8950-881FE7C9CA46} = {A892DD2A-D302-4EF8-98DB-D767F22EAF51}
+		{29E6A49A-8A56-454B-8B86-889652443331} = {A892DD2A-D302-4EF8-98DB-D767F22EAF51}
+		{85F318F2-B191-4343-B26A-76F8D269294F} = {74296895-0F1C-4190-8075-F4140B3B461F}
+		{84C84336-18C2-490D-8BD2-6B3D4CCF78E0} = {B1A764F4-D7FF-4A2C-93EC-6F2BE0C544AF}
+		{74296895-0F1C-4190-8075-F4140B3B461F} = {212CF9B2-84C3-4B43-AB32-59374B059E66}
+		{A892DD2A-D302-4EF8-98DB-D767F22EAF51} = {212CF9B2-84C3-4B43-AB32-59374B059E66}
+		{B1A764F4-D7FF-4A2C-93EC-6F2BE0C544AF} = {212CF9B2-84C3-4B43-AB32-59374B059E66}
+		{FD51508D-070B-4AE1-923B-0E85437EEB64} = {4F20C5C5-A6A5-4164-9567-78F79FA0CBE9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F15B8FE-382B-420C-A43D-117254C56ACD}
+	EndGlobalSection
+EndGlobal

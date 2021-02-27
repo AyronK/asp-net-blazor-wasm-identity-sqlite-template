@@ -1,0 +1,31 @@
+name: EF Migrations
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  ef-ci:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Install dotnet-ef
+      run: dotnet tool install --global dotnet-ef
+      
+    - name: Update database
+      env:
+        ASPNETCORE_ENVIRONMENT: CI
+      working-directory: ./src/Server/MoneyTale.Server
+      run: dotnet ef database update
